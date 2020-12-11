@@ -2,7 +2,7 @@ def text_to_binary(text):
     print("The original string is : " + str(text)) 
     text=text.replace(" ", "")
     res = ''.join(format(ord(x), 'b') for x in text)
-    print(len(text))
+    print(res)
     return res
 
 def BinaryToDecimal(binary):   
@@ -22,6 +22,6 @@ def binary_to_text(text):
         temp_data = int(text[i:i + 7]) 
         decimal_data = BinaryToDecimal(temp_data) 
         str_data = str_data + chr(decimal_data) 
-    print(str_data) 
+    
     return str_data
    
